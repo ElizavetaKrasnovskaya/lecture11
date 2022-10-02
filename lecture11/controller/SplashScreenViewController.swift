@@ -1,8 +1,11 @@
 import UIKit
+import FirebaseAuth
 
 class SplashScreenViewController: UIViewController {
     
     @IBOutlet weak var ivSnake: UIImageView!
+    @IBOutlet weak var btnSignUp: UIButton!
+    @IBOutlet weak var btnLogin: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,18 +18,37 @@ class SplashScreenViewController: UIViewController {
             self.ivSnake.alpha = 1
         }
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(4)) {
-            self.navigateToNextScreen()
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
+            if self.checkIfUserExist() {
+                self.navigateToMainScreen()
+            } else {
+                self.showButtons()
+            }
         }
     }
     
-    private func navigateToNextScreen() {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        guard let destination = sb.instantiateViewController(withIdentifier: "GreetingViewController") as? GreetingViewController,
-              let navController = self.navigationController
-        else { return }
+    private func checkIfUserExist() -> Bool {
+        var result = false
+        if Auth.auth().currentUser?.uid != nil {
+            result = true
+        }
+        return result
+    }
+    
+    private func showButtons() {
+        Utilities.styleFilledButton(self.btnSignUp)
+        Utilities.styleHollowButton(self.btnLogin)
+        self.btnSignUp.alpha = 1
+        self.btnLogin.alpha = 1
+    }
+    
+    private func navigateToMainScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
-        navController.pushViewController(destination, animated: true)
+        let homeViewController = storyboard.instantiateViewController(identifier: "MainViewController") as? MainViewController
+        
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
     }
 }
 

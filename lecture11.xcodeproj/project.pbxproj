@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84166D7B28E8DB9F007BB062 /* snake.png in Resources */ = {isa = PBXBuildFile; fileRef = 84166D7A28E8DB9F007BB062 /* snake.png */; };
 		84166D7D28E8E05C007BB062 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84166D7C28E8E05C007BB062 /* LoginViewController.swift */; };
 		84166D7F28E8E5B4007BB062 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84166D7E28E8E5B4007BB062 /* SignUpViewController.swift */; };
 		84166D8128E8E5C8007BB062 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84166D8028E8E5C8007BB062 /* MainViewController.swift */; };
-		84166D8328E8E70B007BB062 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84166D8228E8E70B007BB062 /* GreetingViewController.swift */; };
 		84166D8628E8F2C4007BB062 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84166D8528E8F2C4007BB062 /* Utilities.swift */; };
 		84166D8A28E8FC17007BB062 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84166D8928E8FC16007BB062 /* GoogleService-Info.plist */; };
+		84166D8E28E99BEC007BB062 /* snake.png in Resources */ = {isa = PBXBuildFile; fileRef = 84166D8D28E99BEC007BB062 /* snake.png */; };
 		846E1E9A28E8D27C00BC72C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E1E9928E8D27C00BC72C6 /* AppDelegate.swift */; };
 		846E1E9C28E8D27C00BC72C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E1E9B28E8D27C00BC72C6 /* SceneDelegate.swift */; };
 		846E1E9E28E8D27C00BC72C6 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E1E9D28E8D27C00BC72C6 /* SplashScreenViewController.swift */; };
@@ -27,13 +26,12 @@
 		3417D9F2F2FF69F1B5F10E83 /* Pods-lecture11.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lecture11.debug.xcconfig"; path = "Target Support Files/Pods-lecture11/Pods-lecture11.debug.xcconfig"; sourceTree = "<group>"; };
 		541AA4169777A18A9E33AE50 /* Pods_lecture11.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lecture11.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		703B12622C13E3A820B82EE9 /* Pods-lecture11.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lecture11.release.xcconfig"; path = "Target Support Files/Pods-lecture11/Pods-lecture11.release.xcconfig"; sourceTree = "<group>"; };
-		84166D7A28E8DB9F007BB062 /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
 		84166D7C28E8E05C007BB062 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84166D7E28E8E5B4007BB062 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		84166D8028E8E5C8007BB062 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		84166D8228E8E70B007BB062 /* GreetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
 		84166D8528E8F2C4007BB062 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		84166D8928E8FC16007BB062 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84166D8D28E99BEC007BB062 /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
 		846E1E9628E8D27C00BC72C6 /* lecture11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lecture11.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		846E1E9928E8D27C00BC72C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		846E1E9B28E8D27C00BC72C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 				3417D9F2F2FF69F1B5F10E83 /* Pods-lecture11.debug.xcconfig */,
 				703B12622C13E3A820B82EE9 /* Pods-lecture11.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -96,7 +93,6 @@
 				84166D7C28E8E05C007BB062 /* LoginViewController.swift */,
 				84166D7E28E8E5B4007BB062 /* SignUpViewController.swift */,
 				84166D8028E8E5C8007BB062 /* MainViewController.swift */,
-				84166D8228E8E70B007BB062 /* GreetingViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -137,9 +133,9 @@
 				84166D7728E8D62D007BB062 /* model */,
 				84166D8428E8F1E1007BB062 /* utils */,
 				846E1EA228E8D27D00BC72C6 /* Assets.xcassets */,
+				84166D8D28E99BEC007BB062 /* snake.png */,
 				846E1EA428E8D27D00BC72C6 /* LaunchScreen.storyboard */,
 				846E1EA728E8D27D00BC72C6 /* Info.plist */,
-				84166D7A28E8DB9F007BB062 /* snake.png */,
 				84166D8928E8FC16007BB062 /* GoogleService-Info.plist */,
 			);
 			path = lecture11;
@@ -207,8 +203,8 @@
 			files = (
 				846E1EA628E8D27D00BC72C6 /* LaunchScreen.storyboard in Resources */,
 				846E1EA328E8D27D00BC72C6 /* Assets.xcassets in Resources */,
+				84166D8E28E99BEC007BB062 /* snake.png in Resources */,
 				84166D8A28E8FC17007BB062 /* GoogleService-Info.plist in Resources */,
-				84166D7B28E8DB9F007BB062 /* snake.png in Resources */,
 				846E1EA128E8D27C00BC72C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +262,6 @@
 				846E1E9E28E8D27C00BC72C6 /* SplashScreenViewController.swift in Sources */,
 				846E1E9A28E8D27C00BC72C6 /* AppDelegate.swift in Sources */,
 				84166D8128E8E5C8007BB062 /* MainViewController.swift in Sources */,
-				84166D8328E8E70B007BB062 /* GreetingViewController.swift in Sources */,
 				846E1E9C28E8D27C00BC72C6 /* SceneDelegate.swift in Sources */,
 				84166D8628E8F2C4007BB062 /* Utilities.swift in Sources */,
 				84166D7F28E8E5B4007BB062 /* SignUpViewController.swift in Sources */,
