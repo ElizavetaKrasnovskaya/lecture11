@@ -3,17 +3,19 @@ import FirebaseAuth
 
 class SignUpViewController: UIViewController {
     
-    
+    // MARK: - IBOutlets
     @IBOutlet weak var etEmail: UITextField!
     @IBOutlet weak var etPassword: UITextField!
     @IBOutlet weak var tvError: UILabel!
     @IBOutlet weak var btnSignUp: UIButton!
     
+    // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
     }
     
+    // MARK: - Private methods
     private func initView() {
         Utilities.styleTextField(etEmail)
         Utilities.styleTextField(etPassword)
@@ -47,6 +49,7 @@ class SignUpViewController: UIViewController {
         view.window?.makeKeyAndVisible()
     }
     
+    // MARK: - IBActions
     @IBAction func signUp(_ sender: UIButton) {
         let error = Utilities.validateFields(
             email: etEmail.text ?? "",

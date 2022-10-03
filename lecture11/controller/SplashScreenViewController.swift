@@ -3,15 +3,18 @@ import FirebaseAuth
 
 class SplashScreenViewController: UIViewController {
     
+    // MARK: - IBOutlets
     @IBOutlet weak var ivSnake: UIImageView!
     @IBOutlet weak var btnSignUp: UIButton!
     @IBOutlet weak var btnLogin: UIButton!
     
+    // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
     }
     
+    // MARK: - Private methods
     private func initView() {
         ivSnake.alpha = 0
         UIView.animate(withDuration: 2.0) {

@@ -71,13 +71,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		84166D7728E8D62D007BB062 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
 		84166D7828E8D63D007BB062 /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,7 +123,6 @@
 				846E1E9B28E8D27C00BC72C6 /* SceneDelegate.swift */,
 				84166D7928E8D64C007BB062 /* controller */,
 				84166D7828E8D63D007BB062 /* view */,
-				84166D7728E8D62D007BB062 /* model */,
 				84166D8428E8F1E1007BB062 /* utils */,
 				846E1EA228E8D27D00BC72C6 /* Assets.xcassets */,
 				84166D8D28E99BEC007BB062 /* snake.png */,

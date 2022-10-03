@@ -2,6 +2,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    // MARK: - Private properties
     private var isFirstLoad = true
     private var snakeHead = UIView()
     private var snake = UIView()
@@ -16,6 +17,7 @@ class MainViewController: UIViewController {
     private var dir = "down"
     private var score = 0
     
+    // MARK: - Override methods
     override func viewDidLayoutSubviews() {
         if isFirstLoad {
             initScreenSize()
@@ -24,6 +26,7 @@ class MainViewController: UIViewController {
         }
     }
     
+    // MARK: - Private methods
     private func initScreenSize() {
         screenWidth = view.frame.size.width
         screenHeight = view.frame.size.height

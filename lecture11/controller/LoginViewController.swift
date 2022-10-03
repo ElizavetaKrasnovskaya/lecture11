@@ -2,17 +2,20 @@ import UIKit
 import FirebaseAuth
 
 class LoginViewController: UIViewController {
-
+    
+    // MARK: - IBOutlets
     @IBOutlet weak var etEmail: UITextField!
     @IBOutlet weak var etPassword: UITextField!
     @IBOutlet weak var tvError: UILabel!
     @IBOutlet weak var btnLogin: UIButton!
     
+    // MARK: - Override methods
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
     }
     
+    // MARK: - Private methods
     private func initView() {
         Utilities.styleTextField(etEmail)
         Utilities.styleTextField(etPassword)
@@ -46,6 +49,7 @@ class LoginViewController: UIViewController {
         view.window?.makeKeyAndVisible()
     }
     
+    // MARK: - IBActions
     @IBAction func login(_ sender: UIButton) {
         let error = Utilities.validateFields(
             email: etEmail.text ?? "",
